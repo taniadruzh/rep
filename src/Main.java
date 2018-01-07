@@ -36,7 +36,7 @@ public class Main {
                     break;
                 }
                 case 4:{
-                    guess();
+                  //  guess();
                     break;
                 }
             }
@@ -112,7 +112,7 @@ public class Main {
         System.out.println("Let's calculate :-)");
         System.out.println("Enter your first number:");
         int num1 = getInt();
-        System.out.println("Enter operation symbol:");
+        System.out.println("Enter operation symbol (+ - * /):");
         char ch = getOperation();
         System.out.println("Enter your second number:");
         int num2 = getInt();
@@ -137,7 +137,24 @@ public class Main {
 
     public static void calc(int num1,char ch,int num2)
     {
-        
+        switch (ch){
+            case '+': {
+                System.out.println(num1 + num2);
+                break;
+            }
+            case '-':{
+                System.out.println(num1 - num2);
+                break;
+            }
+            case '*':{
+                System.out.println(num1 * num2);
+                break;
+            }
+            case '/':{
+                System.out.println(num1 / num2);
+                break;
+            }
+        }
     }
 
     public static String stringPushkin()
