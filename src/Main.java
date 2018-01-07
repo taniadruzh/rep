@@ -7,13 +7,14 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         boolean flExit = true;
-        while (flExit) do {
+        while (flExit) {
             System.out.println("Let's play! (y/n)");
             Scanner in = new Scanner(System.in);
             String st = in.nextLine();
-            if (st == "n") {
+            if (st.equals("n")) {
                 flExit = false;
-                break;
+                System.out.println("Goodbye!");
+                continue;
             }
             System.out.println("1. Do you want to try your luck?");
             System.out.println("2. Do you want to know your fate?");
