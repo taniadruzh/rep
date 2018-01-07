@@ -75,7 +75,7 @@ public class Main {
 
     public static void fate()
     {
-        System.out.println("Chose your favourite poet.");
+        System.out.println("Choose your favourite poet.");
         System.out.println("1. Pushkin");
         System.out.println("2. Lermontov");
         System.out.println("3. Shevchenko");
