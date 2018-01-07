@@ -36,12 +36,26 @@ public class Main {
                     break;
                 }
                 case 4:{
-                  //  guess();
+                    boolean t = guess();
+                    if (t){
+                       System.out.println("More then 5.");
+                        }
+                       else {
+                        System.out.println("Les then 5.");
+                    }
                     break;
                 }
             }
 
         }
+    }
+
+    public static boolean guess()
+    {
+        System.out.println("Enter your number.");
+        Scanner in = new Scanner(System.in);
+        int t = in.nextInt();
+        return t > 5 ? true : false;
     }
 
     public static void lotteryDrawind()
