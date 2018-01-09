@@ -3,7 +3,15 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-            calculator();
+        Cat cat = new Cat();
+        Dog dog = new Dog();
+        dog.setName("Little doggy");
+        dog.setColPaws(5);
+        dog.setHungry(false);
+        System.out.print("My dog's name is " + dog.getName() + ". Hi has " + dog.getColPaws() + " paws.");
+        System.out.println(" He is " + (dog.getHungry() ? "" : " not ") + "hungry.");
+            //calculator();
+
     }
     public static void calculator()
     {
